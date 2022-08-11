@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Better DOM builder</title>
+
+    <script src="../lib/dom-builder.js" async defer></script>
+    <script src="./index.js" async defer></script>
+
+    <link href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <a href="#" title="DOM Builder">
+        <h1>DOM Builder</h1>
+    </a>
+</header>
+<section class="builder">
+    <form autocomplete="off">
+        <div class="row">
+            <div class="building-block">
+                <label for="element-type">Select an element type</label>
+                <select id="element-type">
+                    <option>DIV</option>
+                    <option>PARAGRAPH</option>
+                    <option>BUTTON</option>
+                    <option>LINK</option>
+                </select>
+            </div>
+            <div class="building-block">
+                <label for="element-content">Element content</label>
+                <input placeholder="<Empty>" type="text" id="element-content">
+            </div>
+            <div class="building-block">
+                <label for="element-id">Element #ID</label>
+                <input placeholder="<Auto>" type="text" id="element-id">
+            </div>
+            <div class="building-block">
+                <label for="element-classes">Element classes</label>
+                <select id="element-classes">
+                    <option selected>default</option>
+                    <option>dark</option>
+                    <option>light</option>
+                    <option>nerd</option>
+                </select>
+            </div>
+            <div class="building-block">
+                <label for="element-style">Element style</label>
+                <input placeholder="<None>" type="text" id="element-style">
+            </div>
+            <div class="building-block">
+                <label for="target-id">Target #ID</label>
+                <input placeholder="<Auto>" type="text" id="target-id">
+            </div>
+            <div class="building-block">
+                <label for="trigger-event">Trigger event</label>
+                <select id="trigger-event">
+                    <option selected>None</option>
+                    <option value="onclick">Click</option>
+                    <option value="ondblclick">Double click</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="building-block">
+                <button id="createElement">Create</button>
+            </div>
+        </div>
+    </form>
+</section>
+<section class="result-wrapper">
+    <header>
+        <h2>Result</h2>
+        <button class="db-btn" id="clearAll">Clear all</button>
+    </header>
+    <section class="result">
+    </section>
+</section>
+<footer>
+    <p>Copyright©2022 Riccardo Polacci</p>
+</footer>
+</body>
+</html>
