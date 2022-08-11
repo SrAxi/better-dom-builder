@@ -64,7 +64,7 @@ button:hover {
 }
 
 /*
-* DB - Elements
+* Result
 */
 section.result-wrapper {
     height: 100%;
@@ -86,74 +86,3 @@ section.result {
     height: 100%;
     border-radius: 10px;
 }
-
-/*BUTTON*/
-.db-btn {
-    display: block;
-    background: #36648b;
-    color: #f5f5f5;
-    border: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    padding: 0.4rem 0.5rem;
-    margin: .2rem;
-}
-
-.db-btn:hover {
-    cursor: pointer;
-    background: #4a7396;
-}
-
-
-/*DIV*/
-section.result div {
-    background: #dcdcdc;
-    padding: 1rem;
-    margin: .2rem;
-    border-radius: 5px;
-    width: fit-content;
-}
-
-section.result div.dark,
-.db-btn.dark {
-    background: #515151;
-    color: #f5f5f5;
-}
-
-section.result div.light,
-.db-btn.light {
-    background: #aec1d0;
-    color: #262626;
-}
-
-section.result div.nerd,
-.db-btn.nerd {
-    background: #648b36;
-    color: #f5f5f5;
-    font-family: Courier New, monospace;
-}
-
-/*TEXT*/
-section.result a {
-    display: block;
-    text-decoration: none;
-    color: #0366d6;
-}
-
-section.result a.dark,
-section.result p.dark {
-    color: #262626;
-}
-
-section.result a.light,
-section.result p.light {
-    color: #36648b;
-}
-
-section.result a.nerd,
-section.result p.nerd {
-    color: #648b36;
-}
-
-
-
